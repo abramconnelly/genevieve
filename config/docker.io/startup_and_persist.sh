@@ -9,7 +9,7 @@ su -l genevieve -c " cd /home/genevieve/genevieve && \
 
 su -l genevieve -c " cd /home/genevieve/genevieve && \
   workon genevieve && \
-  celery -A genevieve worker -l info & "
+  celery -A genevieve worker -l info " &
 
 
 while [ true ]
