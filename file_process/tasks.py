@@ -70,8 +70,9 @@ def read_input_genome(analysis_in, genome_format='vcf'):
     elif name.endswith('.bz2'):
         print 'reading directly as bz2'
         genome_file = bz2.BZ2File(analysis_in.uploadfile.path, 'rb')
-        # GzipFile(mode='rb', compresslevel=9,
-        #                        fileobj=analysis_in.uploadfile)
+    elif name.endswith('.vcf');
+        print 'reading directly as vcf'
+        genome_file = open(analysis_in.uploadfile.path, 'rb')
     read_vcf(analysis_in, genome_file)
 
 
