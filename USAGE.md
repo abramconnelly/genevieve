@@ -75,3 +75,7 @@ report:
 ![Report ready](https://github.com/abramconnelly/genevieve/blob/usage-instructions/usage/report_ready.png)
 
 You should now be able to download a CSV report of your genome against ClinVar!
+
+**NOTE: In it's current state, all changes are NOT PERSISTENT.  Once the Docker image has stopped ALL CHANGES WILL BE LOST.**
+
+At this point, the docker image is only meant to test Genevieve functionality.
